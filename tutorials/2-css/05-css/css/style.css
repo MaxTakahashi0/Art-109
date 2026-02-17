@@ -1,3 +1,134 @@
+/* CSS resets */
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+/* respect user font size preferences */
+/* 1 rem means 12 pixels */
+
+html {
+    font-size: 100%;
+}
+
+/* General CSS */
+
 body {
-    background-color: #f5f6e1;
+    /* background-image: url(../images/noise.jpg); */
+    background-color: #ffffff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+
+header {
+    padding: 5rem;
+    margin-bottom: 3rem;
+    /* background-color: #fffbf8; */
+    /* background: #ad245b; */
+    /* background: linear-gradient(90deg, #ad245b 1%, #e64e4e 21%, #ffb44a 100%); */
+    background: #fbd1d1;
+    background: linear-gradient(90deg, #f09ebf 1%, #f19d9d 21%, #f5d2a2 100%);
+    /* background: #00326b; */
+    /* background: linear-gradient(90deg, rgba(0, 50, 107, 1) 0%, rgba(11, 29, 61, 1) 8%, #1a0101 56%, #510101 90%, #760808 100%); */
+    color: #000000;
+    border-bottom: #edd4d4 2px solid;
+    text-align: center;
+        border-style: double;
+    border-width: 10px;
+    border-color: pink peachpuff;
+    box-shadow: 0 4px 6px rgb(237, 212, 212, 1);
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+nav {
+    position: absolute;
+    right: 3rem;
+    top: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+main {}
+
+.about-section,
+.portfolio-section,
+.contact-section {
+    padding-bottom: 1rem;
+}
+
+.about-content,
+.portfolio-content,
+.contact-content {
+    max-width: 50rem;
+    margin: 2rem auto;
+}
+
+.about-content  h2,
+.portfolio-content h2,
+.contact-content h2 {
+padding: 2rem;
+    
+}
+
+
+.portfolio-item {
+    margin-bottom: 5rem;
+    background-color: #a66969;
+    padding: 4rem;
+    text-align: center;
+    /* border: 2px black; */
+    border-style: double;
+    border-width: 10px;
+    border-color: pink peachpuff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgb(237, 212, 212, 1);
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 1.5rem;
+}
+
+.portfolio-item h3 {
+    margin: 1rem 0;
+}
+
+.portfolio-item p {
+    font-size: 1.4rem;
+}
+
+.about-section {
+    background-color: #ffffff;
+}
+
+.portfolio-section {
+    background-color: #fff1ec;
+}
+
+.portfolio-item {
+    background-color: #fcfcfc;
+}
+
+footer {
+    background-color: rgb(255, 239, 220);
+    padding: 2rem;
+    text-align: end;
+}
+
+footer p {
+    font-size: 1rem;
 }
