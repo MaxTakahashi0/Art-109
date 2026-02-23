@@ -1,4 +1,36 @@
-/* CSS resets */
+/* -------------------------color pallette */
+
+/*
+old
+
+background color 1: #fff
+background color 2: #fff1ec
+font: #111
+accent 1: #f09ebf
+accent 2: #ffdab9
+dark: #333
+*/
+
+/*
+new
+*/
+
+:root {
+    --bg-color-1: #fff0e9;
+    --bg-color-2: #fde5d9;
+    --font: #141414;
+    --accent-1: #ff8291;
+    --accent-2: #FFA852;
+    --dark: #141414;
+}
+
+
+
+
+
+
+
+/* ------------------------CSS resets */
 
 * {
     margin: 0;
@@ -13,11 +45,12 @@ html {
     font-size: 100%;
 }
 
-/* General CSS */
+/* --------------------------- General CSS */
 
 body {
     /* background-image: url(../images/noise.jpg); */
-    background-color: #ffffff;
+    background-color: var(--bg-color-1);
+    color: var(--font);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 1.5rem;
     line-height: 1.5;
@@ -27,24 +60,22 @@ body {
 header {
     padding: 4rem;
     margin-bottom: 3rem;
-    /* background-color: #fffbf8; */
-    /* background: #ad245b; */
-    /* background: linear-gradient(90deg, #ad245b 1%, #e64e4e 21%, #ffb44a 100%); */
     background: #fbd1d1;
     background: linear-gradient(90deg, #f09ebf 1%, #f19d9d 21%, #f5d2a2 100%);
-    /* background: #00326b; */
-    /* background: linear-gradient(90deg, rgba(0, 50, 107, 1) 0%, rgba(11, 29, 61, 1) 8%, #1a0101 56%, #510101 90%, #760808 100%); */
     color: #000000;
     border-bottom: #edd4d4 2px solid;
     text-align: center;
-        border-style: double;
+    border-style: double;
     border-width: 10px;
     border-color: pink peachpuff;
     box-shadow: 0 4px 6px rgb(237, 212, 212, 1);
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: var(--accent-1);
 }
 
 nav {
@@ -58,6 +89,11 @@ nav a {
     color: black;
     display: inline-block;
     margin: 0 1rem;
+}
+
+nav a:hover {
+    color: #a9151c;
+    background-color: var(--accent-1);
 }
 
 main {}
@@ -75,23 +111,23 @@ main {}
     margin: 2rem auto;
 }
 
-.about-content  h2,
+.about-content h2,
 .portfolio-content h2,
 .contact-content h2 {
-padding: 2rem;
-    
+    padding: 2rem;
+
 }
 
 
 .portfolio-item {
     margin-bottom: 5rem;
-    background-color: #a66969;
+    background-color: var(--bg-color-1);
     padding: 4rem;
     text-align: center;
     /* border: 2px black; */
     border-style: double;
     border-width: 10px;
-    border-color: pink peachpuff;
+    border-color: pink #ffdab9;
     border-radius: 1rem;
     box-shadow: 0 4px 6px rgb(237, 212, 212, 1);
 }
@@ -112,11 +148,11 @@ padding: 2rem;
 }
 
 .about-section {
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
 }
 
 .portfolio-section {
-    background-color: #fff1ec;
+    background-color: var(--bg-color-2);
 }
 
 .portfolio-item {
@@ -124,11 +160,25 @@ padding: 2rem;
 }
 
 footer {
-    background-color: rgb(255, 239, 220);
+    background-color: var(--dark);
+    color: #eee;
     padding: 2rem;
     text-align: end;
 }
 
 footer p {
     font-size: 1rem;
+}
+
+
+
+
+/* sytle classes */
+
+.accent-1 {
+    color: var(--accent-1);
+}
+
+.accent-2 {
+    color: var(--accent-2);
 }
