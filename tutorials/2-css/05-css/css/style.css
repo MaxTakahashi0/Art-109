@@ -189,7 +189,7 @@ main {
 
 @media (max-width:600px) {
     .portfolio-item {
-        padding: 2rem;
+        padding: 1.5rem;
     }
 }
 
@@ -207,6 +207,12 @@ main {
 
 .portfolio-item p {
     font-size: 1.4rem;
+}
+
+@media (max-width:600px) {
+    .portfolio-item p {
+        font-size: 1rem;
+    }
 }
 
 .about-section {
