@@ -1,0 +1,57 @@
+/*
+CSS RESETS
+*/
+
+
+/* Change box-sizing default to border-box */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+/* Remove default spacing */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Respect user font settings */
+html {
+  font-size: 100%;
+}
+
+
+
+
+/* ~~~~~~~~~~~ main css ~~~~~~~~~~
+~~~~~~~~~~(add yours below) ~~~~~~~~~~~ */
+
+.sticky-footer {
+  display: flex;
+  justify-content: space-between;
+}
+body {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+footer {
+jus
+}
+
+/* style the header 
+- give it some padding, maybe a background + text color */
+
+
+/* style the div classes  
+- change the background and the font color 
+- can you give them a max-width and center them? 
+- how about some margin and padding?  */
+
+
+
+/* Make images responsive 
+- do a google search if you don't remember how =) */
