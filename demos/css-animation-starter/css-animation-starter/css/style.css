@@ -1,10 +1,82 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
 body {
+    background-image: url("../images/background.jpg");
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    color: rgb(243, 255, 230);
+    font-family: "Creepster", system-ui;
+    font-size: 1.5rem;
 }
 
 .sticky-footer {
-    
     justify-content: space-between;
+}
+
+.ghost {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.ghost img {
+    opacity: 0.06;
+    transition: all 0.15s ease;
+}
+
+.ghost img:hover {
+    transform: scale(125%) rotate(10deg);
+    opacity: 100;
+}
+
+.ghost1 {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+}
+
+.ghost1 img {
+    transition: all 0.5s ease;
+    animation: float 10s ease-in-out infinite alternate;
+}
+
+
+.ghost1 img:hover {
+    transform: rotate(720deg);
+}
+
+@keyframes float {
+    0% {
+        transform: translateX(0) translateY(0) rotate(0deg);
+        opacity: 100%;
+    }
+
+
+    25% {
+        transform: translateY(-60vw);
+    }
+
+    50% {
+        transform: translateX(50vw);
+        opacity: 100%;
+    }
+
+    75% {
+        transform: translateY(10rem);
+        opacity: 25%;
+    }
+
+    100% {
+        transform: translateX(-50vw) translateY(0) rotate(0deg);
+        opacity: 100%;
+    }
 }
