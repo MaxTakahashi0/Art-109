@@ -22,25 +22,26 @@ new
     --accent-1: #ffad2a;
     --accent-2: #ffab3d;
     --accent-3: #fa862e;
+    --accent-4: #ffeab8;
     --dark: #2a1508;
     --shadow:
-    0 1px var(--accent-3), 
-    -1px 0 var(--accent-1), 
-    -1px 2px var(--accent-3), 
-    -2px 1px var(--accent-1), 
-    -2px 3px var(--accent-3), 
-    -3px 2px var(--accent-1), 
-    -3px 4px var(--accent-3), 
-    -4px 3px var(--accent-1), 
-    -4px 5px var(--accent-3), 
-    -5px 4px var(--accent-1), 
-    -5px 6px var(--accent-3), 
-    -6px 5px var(--accent-1), 
-    -6px 7px var(--accent-3), 
-    -7px 6px var(--accent-1), 
-    -7px 8px var(--accent-3), 
-    -8px 7px var(--accent-1), 
-    2px 2px 2px rgb(255, 251, 252);
+        0 1px var(--accent-3),
+        -1px 0 var(--accent-1),
+        -1px 2px var(--accent-3),
+        -2px 1px var(--accent-1),
+        -2px 3px var(--accent-3),
+        -3px 2px var(--accent-1),
+        -3px 4px var(--accent-3),
+        -4px 3px var(--accent-1),
+        -4px 5px var(--accent-3),
+        -5px 4px var(--accent-1),
+        -5px 6px var(--accent-3),
+        -6px 5px var(--accent-1),
+        -6px 7px var(--accent-3),
+        -7px 6px var(--accent-1),
+        -7px 8px var(--accent-3),
+        -8px 7px var(--accent-1),
+        2px 2px 2px rgb(255, 165, 109);
 }
 
 
@@ -102,19 +103,23 @@ header {
 
 header h1 {
     color: #FEFFE7;
-    text-shadow:var(--shadow)
-    
+    text-shadow: var(--shadow)
 }
 
 nav a {
     text-decoration: none;
-    color: var(--font);
+    color: var(--bg-color-1);
+    text-shadow: var(--shadow);
     /* margin: 0 1rem;
     transition: all .1s ease; */
 }
 
 nav a:hover {
     color: var(--accent-3);
+}
+
+.nav-brand a :hover {
+    color:var(--accent-4);
 }
 
 .navbar {
@@ -161,7 +166,7 @@ nav a:hover {
     .nav-menu.active {
         display: flex;
         flex-direction: column;
-        background-color:#fa862e34;
+        background-color: #fa862e34;
         border-radius: 1.2rem;
         padding: 1rem;
     }
