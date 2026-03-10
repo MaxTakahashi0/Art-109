@@ -16,12 +16,12 @@ new
 */
 
 :root {
-    --bg-color-1: #141414;
+    --bg-color-1: #FEFFE7;
     --bg-color-2: #ffeee2;
-    --font: #fcf7f5;
-    --accent-1: #FF5A3D;
-    --accent-2: #FF863D;
-    --accent-3: #FFB683;
+    --font: #150803;
+    --accent-1: #ffad2a;
+    --accent-2: #ffab3d;
+    --accent-3: #fa862e;
     --dark: #141414;
 }
 
@@ -78,12 +78,31 @@ body {
 
 header {
     padding: 4rem 3rem;
-    background: linear-gradient(0deg, var(--bg-color-1) 0%, rgba(255, 90, 61, 1) 90%, rgba(245, 51, 68, 1) 100%);
+    background: linear-gradient(0deg, var(--bg-color-1) 0%, var(--accent-2) 73%, var(--accent-1) 100%);
     margin-bottom: 5rem;
 }
 
 header h1 {
-    text-shadow: -5px 5px 0px #ffb783a9, -10px 10px 0px #ff873d69, -15px 15px 0px #ff5a3d2e;
+    color: #FEFFE7;
+    text-shadow:
+    0 1px var(--accent-3), 
+    -1px 0 var(--accent-1), 
+    -1px 2px var(--accent-3), 
+    -2px 1px var(--accent-1), 
+    -2px 3px var(--accent-3), 
+    -3px 2px var(--accent-1), 
+    -3px 4px var(--accent-3), 
+    -4px 3px var(--accent-1), 
+    -4px 5px var(--accent-3), 
+    -5px 4px var(--accent-1), 
+    -5px 6px var(--accent-3), 
+    -6px 5px var(--accent-1), 
+    -6px 7px var(--accent-3), 
+    -7px 6px var(--accent-1), 
+    -7px 8px var(--accent-3), 
+    -8px 7px var(--accent-1), 
+    2px 2px 2px rgb(255, 251, 252);
+    
 }
 
 nav a {
@@ -191,6 +210,12 @@ main {
     margin: 2rem 0;
 }
 
+.contact-content a {
+    text-decoration: none;
+    color: #1d0294;
+}
+
+
 /* project content is for project pages only */
 .project-content {
     text-align: justify;
@@ -238,6 +263,9 @@ main {
 .portfolio-item p {
     font-size: 1.1rem;
 }
+
+
+/* ~~footer~~``````````````````````` */
 
 footer {
     font-size: 1.4rem;
@@ -295,4 +323,20 @@ footer img:hover {
 
 .flex-item-grid {
     flex: 1 0 18.6rem;
+}
+
+
+
+
+
+
+
+
+/* ~~~~~~~~~ extra page styling ~~~~~~~~~~~ */
+
+.polaroid img {
+    border: var(--corner) solid;
+    border-image-source:
+        radial-gradient(closest-side, transparent 70%, var(--bg) 70%);
+    border-image-slice: 49%;
 }
