@@ -97,9 +97,9 @@ body {
 }
 
 header {
-    padding: 4rem 3rem;
+    padding: 3.5rem 3rem;
     background: linear-gradient(0deg, var(--bg-color-1) 0%, var(--accent-2) 73%, var(--accent-1) 100%);
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 header h1 {
@@ -209,7 +209,7 @@ main {
 .contact-content,
 .project-content {
     max-width: 60rem;
-    margin: 0rem auto 7rem auto;
+    margin: 0rem auto 2.5rem auto;
 }
 
 .about-content h2,
@@ -249,13 +249,15 @@ main {
 }
 
 .project-item {
-    margin: 0, auto;
+    margin: 0 auto;
     padding: 2rem;
 }
 
 .project-item img {
-    margin: 0, auto;
+    display: block;
+    max-width: 70%;
     padding: 2rem;
+    margin: 0 auto;
     transition: all 0.1s ease;
 }
 
