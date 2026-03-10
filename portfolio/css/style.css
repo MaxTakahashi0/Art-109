@@ -22,7 +22,25 @@ new
     --accent-1: #ffad2a;
     --accent-2: #ffab3d;
     --accent-3: #fa862e;
-    --dark: #141414;
+    --dark: #2a1508;
+    --shadow:
+    0 1px var(--accent-3), 
+    -1px 0 var(--accent-1), 
+    -1px 2px var(--accent-3), 
+    -2px 1px var(--accent-1), 
+    -2px 3px var(--accent-3), 
+    -3px 2px var(--accent-1), 
+    -3px 4px var(--accent-3), 
+    -4px 3px var(--accent-1), 
+    -4px 5px var(--accent-3), 
+    -5px 4px var(--accent-1), 
+    -5px 6px var(--accent-3), 
+    -6px 5px var(--accent-1), 
+    -6px 7px var(--accent-3), 
+    -7px 6px var(--accent-1), 
+    -7px 8px var(--accent-3), 
+    -8px 7px var(--accent-1), 
+    2px 2px 2px rgb(255, 251, 252);
 }
 
 
@@ -84,24 +102,7 @@ header {
 
 header h1 {
     color: #FEFFE7;
-    text-shadow:
-    0 1px var(--accent-3), 
-    -1px 0 var(--accent-1), 
-    -1px 2px var(--accent-3), 
-    -2px 1px var(--accent-1), 
-    -2px 3px var(--accent-3), 
-    -3px 2px var(--accent-1), 
-    -3px 4px var(--accent-3), 
-    -4px 3px var(--accent-1), 
-    -4px 5px var(--accent-3), 
-    -5px 4px var(--accent-1), 
-    -5px 6px var(--accent-3), 
-    -6px 5px var(--accent-1), 
-    -6px 7px var(--accent-3), 
-    -7px 6px var(--accent-1), 
-    -7px 8px var(--accent-3), 
-    -8px 7px var(--accent-1), 
-    2px 2px 2px rgb(255, 251, 252);
+    text-shadow:var(--shadow)
     
 }
 
@@ -126,7 +127,8 @@ nav a:hover {
     display: none;
     background: none;
     border: none;
-    color: var(--font);
+    color: var(--bg-color-1);
+    text-shadow: var(--shadow);
     font-size: 3rem;
 }
 
@@ -149,6 +151,7 @@ nav a:hover {
     .hamburger {
         display: block;
         align-self: flex-end;
+        transform: translateY(9px);
     }
 
     .nav-menu {
@@ -158,13 +161,14 @@ nav a:hover {
     .nav-menu.active {
         display: flex;
         flex-direction: column;
-        background-color: var(--bg-color-2);
+        background-color:#fa862e34;
         border-radius: 1.2rem;
         padding: 1rem;
     }
 
     .nav-menu a {
         color: var(--bg-color-1);
+        text-shadow: var(--shadow)
     }
 
     header {
