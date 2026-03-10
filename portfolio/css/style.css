@@ -77,7 +77,7 @@ body {
 }
 
 header {
-    padding: 5rem 3rem;
+    padding: 4rem 3rem;
     background: linear-gradient(0deg, var(--bg-color-1) 0%, rgba(255, 90, 61, 1) 90%, rgba(245, 51, 68, 1) 100%);
     margin-bottom: 5rem;
 }
@@ -178,22 +178,38 @@ main {
 
 .about-content,
 .portfolio-content,
-.contact-content {
+.contact-content,
+.project-content {
     max-width: 60rem;
     margin: 0rem auto 7rem auto;
 }
 
 .about-content h2,
 .portfolio-content h2,
-.contact-content h2 {
+.contact-content h2,
+.project-content h2 {
     margin: 2rem 0;
+}
+
+/* project content is for project pages only */
+.project-content {
+    text-align: justify;
+}
+
+.project-content img {
+    margin: 0, auto;
+    padding: 2rem;
+}
+
+.project-content p {
+    padding: 1rem;
 }
 
 .portfolio-item {
     padding: 1.3rem;
     background-color: var(--font);
     color: var(--bg-color-1);
-    transition: all;
+    transition: all 0.1s ease-in-out;
 }
 
 .portfolio-item:hover {
@@ -207,6 +223,11 @@ main {
 .portfolio-item h3 {
     font-size: 1.3rem;
     margin: 0.3rem 0;
+}
+
+.portfolio-item a {
+    text-decoration: none;
+    color: var(--bg-color-1);
 }
 
 .portfolio-item p {
