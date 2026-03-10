@@ -205,6 +205,11 @@ main {
     padding: 1rem;
 }
 
+.project-item {
+    margin: 0, auto;
+    padding: 2rem;
+}
+
 .portfolio-item {
     padding: 1.3rem;
     background-color: var(--font);
