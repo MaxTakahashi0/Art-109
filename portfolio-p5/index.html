@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffad2a">
+    <title>Max Takahashi Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/addons/p5.sound.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <a href="#">
+                    <h1>Max Takahashi</h1>
+                </a>
+            </div>
+            <div class="nav">
+                <button class="hamburger">≡</button>
+                <ul class="nav-menu">
+                    <li><a href="#about-section">About</a></li>
+                    <li><a href="#portfolio-section">Works</a></li>
+                    <li><a href="#contact-section">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="about-section" id="about-section">
+            <div class="about-content">
+                <h2>About</h2>
+                <p>
+                    Max Takahashi brings characters to life to convey their messages. Inspired by cartoons, comics, and
+                    story driven games, their work spans multiple mediums such as 3D modeling, videos, net art, and
+                    more, with each application exploring the conjunction of the comfort of nostalgic make-believe, and
+                    the mundane horrors of existence. Their intent is to create introspective spaces by means of
+                    escapism as well as tackling internal issues head on, bringing the viewer into a world where they
+                    can process their emotions in a space that can be safe and familiar. This escapism surfaces as
+                    comedy, melancholy, or a mix of both, and is often presented in a fantastical universe of its own.
+                </p>
+            </div>
+        </section>
+        <section class="banner-section">
+            <div class="banner-content">
+                <h2 class="speech-bubble">Comics & Games</h2>
+                <div class="banner-item mySlides">
+                    <div class="banner-container">
+                        <a href="projects/sekai/"><img src="images/primortal.jpg" alt=""></a>
+
+                    </div>
+                    <h4>Second Sekai</h4>
+                    <p>An open world RPG</p>
+                </div>
+                <div class="banner-item mySlides">
+                    <div class="banner-container">
+                        <a href="projects/rooftops/"><img src="images/rooftops.jpg" alt=""></a>
+                    </div>
+                    <h4>Rooftops</h4>
+                    <p>A superhero comic book series</p>
+                </div>
+                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+            </div>
+        </section>
+        <section class="portfolio-section" id="portfolio-section">
+            <div class="portfolio-content">
+                <h2>3D & Video Works</h2>
+                <div class="flex-container-grid">
+                    <div class="portfolio-item flex-item-grid">
+                        <a href="projects/arden"><img src="images/arden.jpg" alt="">
+                            <h3>Arden Vale</h3>
+                            <p>A game-ready 3D modeled character.</p>
+                        </a>
+                    </div>
+                    <div class="portfolio-item flex-item-grid">
+                        <a href="projects/doom"><img src="images/doom.jpg" alt="">
+                            <h3>THE GAME OF DOOM!!!</h3>
+                            <p>A series of interactive Max MSP patches and websites.</p>
+                        </a>
+                    </div>
+                    <div class="portfolio-item flex-item-grid">
+                        <a href="projects/noise"><img src="images/noise.jpg" alt="">
+                            <h3>Turning Into Noise</h3>
+                            <p>A 5 minute video instalation</p>
+                        </a>
+                    </div>
+                    <div class="portfolio-item flex-item-grid">
+                        <a href="projects/guitar"><img src="images/guitarguy.jpg" alt="">
+                            <h3>Guitar Guy</h3>
+                            <p>A cinematic render of a 3D modeled character.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact-section" id="contact-section">
+            <div class="contact-content">
+                <h2>Contact info</h2>
+                <p>Email: <a href="it.be.chroma@gmail.com">it.be.chroma@gmail.com</a></p>
+                <br>
+                <p><a href="documents/Max_Takahashi_Resume.pdf">Resume PDF Download</a></p>
+            </div>
+        </section>
+    </main>
+    <footer class="flex-container">
+        <p>&copy 2025 Max Takahashi</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/squiggle_squiggleson"><img src="images/icon-logo-instagram.png"
+                    alt=""></a>
+            <a href="https://www.youtube.com/@chroma8950"><img src="images/icon-logo-youtube.png" alt=""></a>
+            <a href="https://ko-fi.com/chromayo"><img src="images/icon-logo-ko-fi.png" alt=""></a>
+        </div>
+    </footer>
+    <script src="js/hamburger.js"></script>
+    <script src="js/slideshow.js"></script>
+    <script src="js/sketch.js"></script>
+</body>
+
+</html>

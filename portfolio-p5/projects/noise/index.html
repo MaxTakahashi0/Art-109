@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Takahashi Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/baguetteBox.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <a href="../../#">
+                    <h1>Max Takahashi</h1>
+                </a>
+            </div>
+            <div class="nav">
+                <button class="hamburger">≡</button>
+                <ul class="nav-menu">
+                    <li><a href="../../#about-section">About</a></li>
+                    <li><a href="../../#portfolio-section">Works</a></li>
+                    <li><a href="../../#contact-section">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="project-section">
+            <div class="project-content">
+                <h2>Turning Into Noise</h2>
+                <div class="project-item polaroid">
+                    <a href="../../images/noise.jpg" data-caption="Image Description Yay!"><img src="../../images/noise.jpg" alt=""></a>
+                    <p><a href="https://youtu.be/qrqjSoibGqs">Watch on YouTube</a></p>
+
+                </div>
+                <p>
+                    Turning into Noise is about the fragments that are lost through digital processes, whether they
+                    be fragments of information
+                </p>
+                <p>
+                    The original photo dataset utilized for the video includes photos of myself, my family, and
+                    notable photos spanning about 6 years. Merely by choosing these images, I am parsing the
+                    data that exists about myself into a collage of “best moments” which immediately eliminates the
+                    possibility of the dataset representing entire years of my life. However, the tensors derived from
+                    this dataset were able to assist the generation of “a person that is me”. For the purposes of this
+                    project I treated each iteration or result as a new version of myself. It felt like honoring a part
+                    of
+                    myself that has never happened, but is somehow before me.
+                </p>
+                <p>
+                    The spoken words derive from my own, which I wrote to myself 6 years ago. Processing these
+                    words distorted them until I no longer recognized or understood the results to be my own
+                    writing. My words morphed into nonsense, but I treated the nonsense as if it meant something,
+                    because in my mind, the words still belonged to me.
+                </p>
+                <p>
+                    This piece discusses where the line is drawn between self, representation of self, representation
+                    of something else, and representation of nothing at all. It tackles the idea that individuals cannot
+                    truly be embodied within a program or experience, no matter how extensive or accurate. When
+                    the images and words become nothing more than noise, what really matters?
+                </p>
+                <p>
+                    This work also expresses the data that is lost when sources of information are simplified and
+                    expounded upon again and again, until there is little information left, and the rest is filler. This
+                    speaks to the supposed vastness of the internet in which information is simplified to such small
+                    amounts that when we absorb it, we can only recite so much of it in the end. So, as data
+                    becomes more openly available, and we ourselves are being turned into data, we too are lost in
+                    the noise of the internet. Simplified and overprocessed until we exist as tensors to inform the
+                    collection of more data. However, as Hito Seteryl informs us; if this extraction and generalization
+                    of ourselves is inevitable, we might as well accept our data as it is and have fun with it.
+                </p>
+                <p>
+                    As human beings, our existence is more than what we put on the internet. It is more than what
+                    we tell others, and it is more than what we tell ourselves. Our existences are their own
+                    summary, and any simpler of a description is false. But it is tempting to ask yourself, what would
+                    I look like in my simplest form?
+                </p>
+            </div>
+        </section>
+
+    </main>
+    <footer class="flex-container">
+        <p>&copy 2025 Max Takahashi</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/squiggle_squiggleson"><img src="../../images/icon-logo-instagram.png"
+                    alt=""></a>
+            <a href="https://www.youtube.com/@chroma8950"><img src="../../images/icon-logo-youtube.png" alt=""></a>
+            <a href="https://ko-fi.com/chromayo"><img src="../../images/icon-logo-ko-fi.png" alt=""></a>
+        </div>
+    </footer>
+    <script src="../../js/hamburger.js"></script>
+    <script src="../../js/baguetteBox.js"></script>
+    <script>
+        baguetteBox.run(".project-item", {
+            captions: true
+        })
+    </script>
+</body>
+
+</html>

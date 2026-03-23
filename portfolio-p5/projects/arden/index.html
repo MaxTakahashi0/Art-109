@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Takahashi Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/baguetteBox.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <a href="../../#">
+                    <h1>Max Takahashi</h1>
+                </a>
+            </div>
+            <div class="nav">
+                <button class="hamburger">≡</button>
+                <ul class="nav-menu">
+                    <li><a href="../../#about-section">About</a></li>
+                    <li><a href="../../#portfolio-section">Works</a></li>
+                    <li><a href="../../#contact-section">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="project-section">
+            <div class="project-content">
+                <h2>Arden</h2>
+                <div class="project-item polaroid">
+                    <a href="../../images/arden.jpg" data-caption="Image Description Yay!"><img
+                            src="../../images/arden.jpg" alt=""></a>
+                </div>
+                <p>
+                    I wanted to emulate the handpainted textures of games like WoW and LoL and so for this model I
+                    studied the artwork of Yuriy Porubov and Bernardo Cristovao, senior artists at their respective
+                    studios.
+                </p>
+                <p>
+                    I looked to Yuriy's artwork to study skin shading and cloth because I wanted to get a better
+                    understanding of how to paint implied subsurface scattering and different materials in this style.
+                    Check out his work here: <a href="https://www.artstation.com/artwork/eloL5D">Hearsteel - Kayn
+                    </a>
+                </p>
+                <p>The main thing I studied from Bernardo's piece is how to paint gold, and the wear-and-tear that comes
+                    with it inevitably being dented after battle. (In this character's case, they throw their scarf
+                    clasp to the side pretty carelessly when they're not using it. Having giant skeleton arms isn't
+                    easy, you know?) Here's Bernardo's piece:
+                    <a href="https://www.artstation.com/artwork/JraePZ">WARCRAFT | EMBERS OF NELTHARION</a>
+                </p>
+                <p>My biggest challenge for this project was creating a color scheme that fit the original concept art.
+                    Initially, I went for a neon green/plauge theme (Which I absolutely want to make in the future),
+                    however since this was a personal work, I figured it would be best to round out my experience by
+                    making a saturated and balanced texture. It was a challenge to keep everything saturated yet
+                    cohesive, but in the end, I really like how everything pops rather than falling flat.
+                    It's low poly, rigged, and ready to raise chaos!</p>
+                <p> Concept Art by Forest_Box on Instagram</p>
+            </div>
+        </section>
+
+    </main>
+    <footer class="flex-container">
+        <p>&copy 2025 Max Takahashi</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/squiggle_squiggleson"><img src="../../images/icon-logo-instagram.png"
+                    alt=""></a>
+            <a href="https://www.youtube.com/@chroma8950"><img src="../../images/icon-logo-youtube.png" alt=""></a>
+            <a href="https://ko-fi.com/chromayo"><img src="../../images/icon-logo-ko-fi.png" alt=""></a>
+        </div>
+    </footer>
+    <script src="../../js/hamburger.js"></script>
+    <script src="../../js/baguetteBox.js"></script>
+    <script>
+        baguetteBox.run(".project-item", {
+            captions: true
+        })
+    </script>
+</body>
+
+</html>
