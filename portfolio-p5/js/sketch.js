@@ -35,8 +35,6 @@ function mouseClicked() {
 }
 
 function drawThing(_x, _y) {
-    strokeWeight(0);
-    fill(random(200, 255), random(200, 255), random(200, 255),);
 
     image(img, _x, _y, 50, 55);
 }
