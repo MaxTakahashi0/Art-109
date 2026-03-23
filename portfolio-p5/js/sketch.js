@@ -10,14 +10,14 @@ function preload() {
 }
 
 function setup() {
-    canvas = createCanvas(windowWidth, windowHeight+2000);
+    canvas = createCanvas(windowWidth, windowHeight + 2000);
     canvas.position(0, 0);
     canvas.style("z-index", -2);
     imageMode(CENTER);
 }
 
 function windowResized() {
-    resizeCanvas(windowWidth, windowHeight+2000);
+    resizeCanvas(windowWidth, windowHeight + 2000);
 }
 
 function draw() {
@@ -31,7 +31,7 @@ function draw() {
 }
 
 function mouseClicked() {
-        drawThing(xPos+random(-200, 200), yPos+random(-200, 200));
+    drawThing(xPos + random(-200, 200), yPos + random(-200, 200));
 }
 
 function drawThing(_x, _y) {
