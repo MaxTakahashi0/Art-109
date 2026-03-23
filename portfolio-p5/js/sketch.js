@@ -6,7 +6,7 @@ let yPos = 0;
 let easing = 0.04;
 
 function preload() {
-    img = loadImage('../images/duck.png');
+    img = loadImage('images/duck.png');
 }
 
 function setup() {
