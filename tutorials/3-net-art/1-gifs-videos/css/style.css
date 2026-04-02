@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(220, 235, 235);
+    background-image: url('../media/koi.gif');
+    background-repeat: repeat;
+    background-size: 8rem;
+    background-position: center;
+    background-blend-mode:overlay;
+}
+
+.koi-pond {
+    position: absolute;
+    top: 300px;
+    right: 220px;
+}
+
+.relax-div {
+    position: relative;
+    margin: 50px auto;
+    max-width: 400px;
+    font-size: 2rem;
+    left: 20px;
+}
+
+.duck {
+    max-width: 150px;
+    position: absolute;
+    top: 50px;
+    right: 300px;
+} 
+
+.hover-video {
+    
+}
