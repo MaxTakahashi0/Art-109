@@ -1,0 +1,21 @@
+{
+  "name": "drawing-app",
+  "version": "1.0.0",
+  "description": "sockets to make drawing app",
+  "keywords": [
+    "sockets",
+    "p5"
+  ],
+  "license": "ISC",
+  "author": "max",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "socket.io": "^4.8.3"
+  }
+}

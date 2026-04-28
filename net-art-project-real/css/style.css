@@ -1,0 +1,13 @@
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    background-color: #212529;
+    background-image: url(/images/sky.gif);
+    background-blend-mode: overlay;
+}
