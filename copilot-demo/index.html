@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>SocialHub - Modern Feed</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Fireworks Canvas -->
+    <canvas id="fireworks-canvas"></canvas>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-sparkles"></i> SocialHub
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search posts, people...">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="header-icons">
+                <button class="icon-btn"><i class="fas fa-bell"></i><span class="badge">3</span></button>
+                <button class="icon-btn"><i class="fas fa-envelope"></i></button>
+                <div class="profile-avatar">
+                    <img src="https://i.pravatar.cc/40?img=1" alt="Profile">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item active">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-compass"></i>
+                    <span>Explore</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-bookmark"></i>
+                    <span>Bookmarks</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-heart"></i>
+                    <span>Likes</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-user"></i>
+                    <span>Profile</span>
+                </a>
+            </nav>
+            <button class="btn-compose">
+                <i class="fas fa-pen"></i> Compose Post
+            </button>
+        </aside>
+
+        <!-- Main Feed -->
+        <main class="feed">
+            <!-- Create Post -->
+            <div class="create-post">
+                <img src="https://i.pravatar.cc/48?img=1" alt="Your avatar" class="avatar">
+                <div class="create-post-content">
+                    <textarea placeholder="What's on your mind?" class="post-input"></textarea>
+                    <div class="create-post-actions">
+                        <div class="post-tools">
+                            <button class="tool-btn"><i class="fas fa-image"></i></button>
+                            <button class="tool-btn"><i class="fas fa-smile"></i></button>
+                            <button class="tool-btn"><i class="fas fa-location-dot"></i></button>
+                        </div>
+                        <button class="btn-post">Post</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Posts -->
+            <article class="post">
+                <div class="post-header">
+                    <div class="author-info">
+                        <img src="https://i.pravatar.cc/48?img=2" alt="Avatar" class="avatar">
+                        <div class="author-meta">
+                            <h3>Sarah Anderson</h3>
+                            <span class="handle">@sarahdesigns</span>
+                            <span class="timestamp">2 hours ago</span>
+                        </div>
+                    </div>
+                    <button class="more-btn"><i class="fas fa-ellipsis"></i></button>
+                </div>
+                <div class="post-content">
+                    <p>Just finished redesigning my portfolio website! 🎨 So excited about the new modern aesthetic. Check it out and let me know what you think!</p>
+                </div>
+                <div class="post-image">
+                    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=300&fit=crop" alt="Post image" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22500%22 height=%22300%22%3E%3Crect fill=%22%23e5e7eb%22 width=%22500%22 height=%22300%22/%3E%3C/svg%3E'">
+                </div>
+                <div class="post-stats">
+                    <span><strong>1.2K</strong> likes</span>
+                    <span><strong>342</strong> comments</span>
+                    <span><strong>156</strong> shares</span>
+                </div>
+                <div class="post-actions">
+                    <button class="action-btn"><i class="far fa-heart"></i> Like</button>
+                    <button class="action-btn"><i class="far fa-comment"></i> Comment</button>
+                    <button class="action-btn"><i class="far fa-share"></i> Share</button>
+                </div>
+            </article>
+
+            <article class="post">
+                <div class="post-header">
+                    <div class="author-info">
+                        <img src="https://i.pravatar.cc/48?img=3" alt="Avatar" class="avatar">
+                        <div class="author-meta">
+                            <h3>Marcus Tech</h3>
+                            <span class="handle">@marcustech_</span>
+                            <span class="timestamp">4 hours ago</span>
+                        </div>
+                    </div>
+                    <button class="more-btn"><i class="fas fa-ellipsis"></i></button>
+                </div>
+                <div class="post-content">
+                    <p>The future of web development is here! 🚀 Check out these amazing CSS features that will blow your mind. Web components, Container queries, and more...</p>
+                </div>
+                <div class="post-image">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=300&fit=crop" alt="Post image" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22500%22 height=%22300%22%3E%3Crect fill=%22%23e5e7eb%22 width=%22500%22 height=%22300%22/%3E%3C/svg%3E'">
+                </div>
+                <div class="post-stats">
+                    <span><strong>3.5K</strong> likes</span>
+                    <span><strong>892</strong> comments</span>
+                    <span><strong>324</strong> shares</span>
+                </div>
+                <div class="post-actions">
+                    <button class="action-btn"><i class="far fa-heart"></i> Like</button>
+                    <button class="action-btn"><i class="far fa-comment"></i> Comment</button>
+                    <button class="action-btn"><i class="far fa-share"></i> Share</button>
+                </div>
+            </article>
+
+            <article class="post">
+                <div class="post-header">
+                    <div class="author-info">
+                        <img src="https://i.pravatar.cc/48?img=4" alt="Avatar" class="avatar">
+                        <div class="author-meta">
+                            <h3>Emma Creative</h3>
+                            <span class="handle">@emmacreative</span>
+                            <span class="timestamp">6 hours ago</span>
+                        </div>
+                    </div>
+                    <button class="more-btn"><i class="fas fa-ellipsis"></i></button>
+                </div>
+                <div class="post-content">
+                    <p>Beautiful morning at the design studio! ☕ Sometimes the best ideas come when you step away and grab a coffee. #DesignLife #CreativeWork</p>
+                </div>
+                <div class="post-image">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=300&fit=crop" alt="Post image" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22500%22 height=%22300%22%3E%3Crect fill=%22%23e5e7eb%22 width=%22500%22 height=%22300%22/%3E%3C/svg%3E'">
+                </div>
+                <div class="post-stats">
+                    <span><strong>2.1K</strong> likes</span>
+                    <span><strong>487</strong> comments</span>
+                    <span><strong>203</strong> shares</span>
+                </div>
+                <div class="post-actions">
+                    <button class="action-btn"><i class="far fa-heart"></i> Like</button>
+                    <button class="action-btn"><i class="far fa-comment"></i> Comment</button>
+                    <button class="action-btn"><i class="far fa-share"></i> Share</button>
+                </div>
+            </article>
+
+            <article class="post">
+                <div class="post-header">
+                    <div class="author-info">
+                        <img src="https://i.pravatar.cc/48?img=5" alt="Avatar" class="avatar">
+                        <div class="author-meta">
+                            <h3>Alex Rivera</h3>
+                            <span class="handle">@alexrivera</span>
+                            <span class="timestamp">8 hours ago</span>
+                        </div>
+                    </div>
+                    <button class="more-btn"><i class="fas fa-ellipsis"></i></button>
+                </div>
+                <div class="post-content">
+                    <p>🎬 New video project is live! Spent 3 weeks on this one. So grateful for the amazing feedback from the community. What should I tackle next?</p>
+                </div>
+                <div class="post-image">
+                    <img src="https://images.unsplash.com/photo-1611432473050-7440f23dbeed?w=500&h=300&fit=crop" alt="Post image" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22500%22 height=%22300%22%3E%3Crect fill=%22%23e5e7eb%22 width=%22500%22 height=%22300%22/%3E%3C/svg%3E'">
+                </div>
+                <div class="post-stats">
+                    <span><strong>5.8K</strong> likes</span>
+                    <span><strong>1.2K</strong> comments</span>
+                    <span><strong>756</strong> shares</span>
+                </div>
+                <div class="post-actions">
+                    <button class="action-btn"><i class="far fa-heart"></i> Like</button>
+                    <button class="action-btn"><i class="far fa-comment"></i> Comment</button>
+                    <button class="action-btn"><i class="far fa-share"></i> Share</button>
+                </div>
+            </article>
+        </main>
+
+        <!-- Right Sidebar - Trending -->
+        <aside class="right-sidebar">
+            <div class="trending-card">
+                <h2>What's Trending</h2>
+                <a href="#" class="trend-item">
+                    <div class="trend-category">Technology</div>
+                    <h3>#WebDesign</h3>
+                    <p>145K posts</p>
+                </a>
+                <a href="#" class="trend-item">
+                    <div class="trend-category">Programming</div>
+                    <h3>#ReactJS</h3>
+                    <p>89K posts</p>
+                </a>
+                <a href="#" class="trend-item">
+                    <div class="trend-category">Design</div>
+                    <h3>#UXDesign</h3>
+                    <p>267K posts</p>
+                </a>
+                <a href="#" class="trend-item">
+                    <div class="trend-category">Entertainment</div>
+                    <h3>#WebDevelopment</h3>
+                    <p>432K posts</p>
+                </a>
+            </div>
+
+            <div class="suggestions-card">
+                <h2>Suggested for You</h2>
+                <div class="suggestion-item">
+                    <img src="https://i.pravatar.cc/40?img=10" alt="Avatar">
+                    <div class="suggestion-info">
+                        <h4>Jordan Lee</h4>
+                        <p>Popular in Tech</p>
+                    </div>
+                    <button class="btn-follow">Follow</button>
+                </div>
+                <div class="suggestion-item">
+                    <img src="https://i.pravatar.cc/40?img=11" alt="Avatar">
+                    <div class="suggestion-info">
+                        <h4>Casey Design</h4>
+                        <p>Popular in Design</p>
+                    </div>
+                    <button class="btn-follow">Follow</button>
+                </div>
+                <div class="suggestion-item">
+                    <img src="https://i.pravatar.cc/40?img=12" alt="Avatar">
+                    <div class="suggestion-info">
+                        <h4>Morgan Studio</h4>
+                        <p>Popular in Creative</p>
+                    </div>
+                    <button class="btn-follow">Follow</button>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <script src="./js/app.js" onerror="console.log('Script loaded with fallback')"></script>
+    <script>
+        // Fallback inline scripts for mobile compatibility
+        document.querySelectorAll('.action-btn').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                if (this.innerText.includes('Like')) {
+                    this.classList.toggle('liked');
+                }
+            });
+        });
+        document.querySelector('.btn-post').addEventListener('click', function() {
+            const textarea = document.querySelector('.post-input');
+            if (textarea.value.trim()) {
+                textarea.value = '';
+            }
+        });
+    </script>
+</body>
+</html>
