@@ -1,5 +1,5 @@
 
-let rock1, rock2, rock3; floor;
+
 
 function preload() {
     treeImg = loadImage('images/tree.png');
@@ -75,7 +75,8 @@ function draw() {
     image(treeImg, 1000, 0, 700, 700);
     image(treeImg, 1360, 0, 1000, 1000);
     fill(200, 200, 200);
-    ellipse(windowWidth / 2, windowWidth / 2 + 200, 3000, 1000);
+    strokeWeight(0);
+    ellipse(windowWidth / 2, 870, 3000, 1000);
     image(sandImg, -210, 264, windowWidth + 400, 890);
 
 
