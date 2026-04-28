@@ -7,7 +7,7 @@ function preload() {
     rockImg1 = loadImage('/images/rock.png');
     rockImg2 = loadImage('/images/rock2.png');
     rockImg3 = loadImage('/images/rock3.png');
-    rockbaseImg = loadImage('/images/rockbase.webp');
+    rockbaseImg = loadImage('/images/rockbase.png');
 }
 
 function setup() {
