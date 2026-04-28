@@ -4,23 +4,23 @@
 let backgroundList = 0;
 
 const backgrounds = [
-    "../images/sky.gif",
-    "../images/sky.gif",
-    "../images/sky.gif",
-    "../images/sky.gif",
-    "../images/sky.gif",
-    "../images/sky.gif",
-    "../images/sky.gif",
-    "../images/sky.gif",
-    "../images/sky.gif",
-    "../images/sky.gif",
-    "../images/sky.gif",
-    "../images/sky.gif",
-    "../images/sky.gif",
-    "../images/sky.gif",
-    "../images/sky.gif",
-    "../images/sky.gif",
-    "../images/ded.png"
+    "/images/sky.gif",
+    "/images/sky.gif",
+    "/images/sky.gif",
+    "/images/sky.gif",
+    "/images/sky.gif",
+    "/images/sky.gif",
+    "/images/sky.gif",
+    "/images/sky.gif",
+    "/images/sky.gif",
+    "/images/sky.gif",
+    "/images/sky.gif",
+    "/images/sky.gif",
+    "/images/sky.gif",
+    "/images/sky.gif",
+    "/images/sky.gif",
+    "/images/sky.gif",
+    "/images/ded.png"
 ];
 
 
