@@ -28,7 +28,7 @@ function setup() {
 
     rock2 = new Sprite(1200, 50, 80, 80);
     rock2.img = rockImg2;
-    rock2.scale = 0.15;
+    rock2.scale = 0.5;
     rock2.addCollider(0, 0, 230, 150);
 
     rock1 = new Sprite(200, 100, 80, 80);
