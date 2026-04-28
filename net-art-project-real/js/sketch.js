@@ -1,5 +1,5 @@
 
-let rock1, rock2, rock3; floor; maskGraphic;
+let rock1, rock2, rock3; floor;
 
 function preload() {
     treeImg = loadImage('/images/tree.png');
