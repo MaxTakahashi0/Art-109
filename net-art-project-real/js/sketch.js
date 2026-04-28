@@ -2,12 +2,12 @@
 let rock1, rock2, rock3; floor;
 
 function preload() {
-    treeImg = loadImage('/images/tree.png');
-    sandImg = loadImage('images/sand.png');
-    rockImg1 = loadImage('/images/rock.png');
-    rockImg2 = loadImage('/images/rock2.png');
-    rockImg3 = loadImage('/images/rock3.png');
-    rockbaseImg = loadImage('/images/rockbase.png');
+    treeImg = loadImage('../images/tree.png');
+    sandImg = loadImage('../images/sand.png');
+    rockImg1 = loadImage('../images/rock.png');
+    rockImg2 = loadImage('../images/rock2.png');
+    rockImg3 = loadImage('../images/rock3.png');
+    rockbaseImg = loadImage('../images/rockbase.png');
 }
 
 function setup() {
