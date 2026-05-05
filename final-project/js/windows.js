@@ -1,22 +1,16 @@
-const sun = document.querySelector('.drainContainer');
+const popupNotice = document.querySelector('.popup-notice');
 
-sun.addEventListener('click', () => {
-  sun.classList.toggle('is-paused');
+popupNotice.addEventListener('click', () => {
+  popupNotice.classList.toggle('hidden');
 });
 
-
-sun.addEventListener("click", () => {
-
-    window.close();
-
-});
 
 
 
 function randomPopups() {
-    let count = Math.floor(Math.random() * 2) + 1;
+    let popupAmount = Math.floor(Math.random() * 2) + 1;
 
-    for (let i = 0; i < count; i++) {
+    for (let i = 0; i < popupAmount; i++) {
         openWindow();
     }
 }

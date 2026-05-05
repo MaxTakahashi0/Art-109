@@ -19,8 +19,30 @@ body {
 
 }
 
+.popup-notice {
+    pointer-events: none;
+    position: absolute;
+    background-color: black;
+    text-align: center;
+    animation: notice 7s forwards;
+}
+
+@keyframes notice {
+    0% {
+        opacity: 100%;
+    }
+
+    15% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+}
+
 .entry-text p {
-    kerning: 2rem;
+    letter-spacing: 3px;
     cursor: pointer;
     text-align: center;
     text-justify: distribute;
