@@ -1,8 +1,3 @@
-const popupNotice = document.querySelector('.popup-notice');
-
-popupNotice.addEventListener('click', () => {
-  popupNotice.classList.toggle('hidden');
-});
 
 
 
