@@ -413,6 +413,8 @@ main {
 }
 
 .project-content a {
+    display: inline;
+    text-align: center;
     text-decoration: none;
     color: #5b5151;
     transition: all;
