@@ -41,7 +41,8 @@ new ffad2a
         -7px 6px var(--accent-1),
         -7px 8px var(--accent-3),
         -8px 7px var(--accent-1),
-        2px 2px 2px rgb(255, 165, 109);
+        2px 2px 2px rgb(232, 205, 158);
+    /* 2px 2px 2px rgb(255, 165, 109); */
     --shadowsmall:
         0 1px var(--accent-1),
         -1px 0 var(--accent-3),
@@ -368,10 +369,13 @@ main {
 }
 
 .portfolio-item h3 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     text-align: center;
     margin: 0.3rem auto;
     justify-content: center;
+    color: var(--bg-color-1);
+    text-shadow: var(--shadowsmall);
+    border-radius: 2rem;
 }
 
 .portfolio-item a {
@@ -380,8 +384,11 @@ main {
 }
 
 .portfolio-item p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     text-align: center;
+    color: var(--dark);
+    text-shadow: 1px 1px 1px rgb(187, 112, 58);
+
 }
 
 
@@ -416,12 +423,14 @@ main {
 }
 
 .project-content p {
+
     padding: 1rem;
     font-size: 1.2rem;
 }
 
 .project-item {
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
     padding: 1rem;
 }
 
@@ -504,13 +513,13 @@ footer img:hover {
 .flex-container-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 4rem;
+    gap: 2rem;
     justify-content: center;
     align-items: stretch;
 }
 
 .flex-item-grid {
-    flex: 1 0 20.6rem;
+    flex: 1 0 18.6rem;
 }
 
 
