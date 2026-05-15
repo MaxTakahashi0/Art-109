@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dungeon Crawler</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="game-shell">
+        <div class="panels">
+            <div class="canvas-panel">
+                <canvas id="gameCanvas" width="960" height="540"></canvas>
+                <div class="game-overlay">
+                    <div class="info-strip">
+                        <div class="info-item">
+                            <span class="label">Level</span>
+                            <strong id="level"></strong>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">HP</span>
+                            <strong id="health"></strong>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Gold</span>
+                            <strong id="treasure"></strong>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Keys</span>
+                            <strong id="inventory"></strong>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Potions</span>
+                            <strong id="potions"></strong>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Armor</span>
+                            <strong id="armor"></strong>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">XP</span>
+                            <strong id="xp"></strong>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Power</span>
+                            <strong id="power"></strong>
+                        </div>
+                        <div class="info-item facing">
+                            <span class="label">Facing</span>
+                            <strong id="facing"></strong>
+                        </div>
+                    </div>
+                    <div class="message-box" id="message"></div>
+                    <div class="action-row">
+                        <button class="game-btn" data-action="move-forward" aria-label="Move Forward">▲</button>
+                        <button class="game-btn" data-action="turn-left" aria-label="Turn Left">◀</button>
+                        <button class="game-btn action-button" data-action="attack" aria-label="Attack">⚔</button>
+                        <button class="game-btn" data-action="turn-right" aria-label="Turn Right">▶</button>
+                        <button class="game-btn" data-action="move-back" aria-label="Move Back">▼</button>
+                    </div>
+                </div>
+                <div class="death-screen hidden" id="deathScreen">
+                    <div class="death-card">
+                        <div class="death-title">THY SOUL IS FORFEIT</div>
+                        <p class="death-line">The dungeon hath bested thee. Rise once more, brave fool, and prove thy mettle anew.</p>
+                        <button id="restartButton" class="game-btn action-button">Rise Again</button>
+                    </div>
+                </div>                <div class=\"overworld-screen hidden\" id=\"overworldScreen\">
+                    <div class=\"overworld-hud\">
+                        <div class=\"overworld-header\">Kingdom of Thornwick</div>
+                        <div class=\"quest-log\" id=\"questLog\"></div>
+                    </div>
+                </div>
+                <div class=\"dialogue-panel hidden\" id=\"dialoguePanel\">
+                    <div class=\"dialogue-header\" id=\"dialogueHeader\">Mysterious Stranger</div>
+                    <div class=\"dialogue-text\" id=\"dialogueText\">What brings thee to this place?</div>
+                    <div class=\"dialogue-buttons\" id=\"dialogueButtons\"></div>
+                </div>            </div>
+
+            <div>
+                <section class="controls-panel">
+                    <h2>Controls</h2>
+                    <p>Tap the buttons or use keyboard input to play:</p>
+                    <ul>
+                        <li><strong>W / S</strong> — Move forward / backward</li>
+                        <li><strong>A / D</strong> — Turn left / right</li>
+                        <li><strong>Space</strong> — Attack or open chest</li>
+                        <li><strong>P</strong> — Use a potion</li>
+                        <li><strong>R</strong> — Restart after death</li>
+                    </ul>
+                    <div class="map-box">
+                        <div class="map-label">Mini Map</div>
+                        <canvas id="mapCanvas" width="300" height="300"></canvas>
+                        <div class="map-key">
+                            <div class="map-key-item"><span class="map-swatch wall"></span>Wall</div>
+                            <div class="map-key-item"><span class="map-swatch floor"></span>Corridor</div>
+                            <div class="map-key-item"><span class="map-swatch chest"></span>Chest</div>
+                            <div class="map-key-item"><span class="map-swatch enemy"></span>Enemy</div>
+                            <div class="map-key-item"><span class="map-swatch boss"></span>Boss</div>
+                            <div class="map-key-item"><span class="map-swatch exit"></span>Exit</div>
+                            <div class="map-key-item"><span class="map-swatch key"></span>Key</div>
+                            <div class="map-key-item"><span class="map-swatch shop"></span>Shop</div>
+                            <div class="map-key-item"><span class="map-swatch player"></span>You</div>
+                        </div>
+                        <div class="shop-box hidden" id="shopPanel">
+                            <div class="shop-header">
+                                <strong>Dungeon Emporium</strong>
+                                <button id="shopClose" class="shop-close" aria-label="Close shop">✕</button>
+                            </div>
+                            <p class="shop-desc" id="shopDescription">Visit a shop tile to browse wares.</p>
+                            <div class="shop-items" id="shopItems"></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <footer>
+            Press <strong>W</strong>, <strong>A</strong>, <strong>S</strong>, <strong>D</strong> to move. Use <strong>Space</strong> to interact with chests and enemies.
+        </footer>
+    </div>
+
+    <script src="js/game.js"></script>
+</body>
+</html>
