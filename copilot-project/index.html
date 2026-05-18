@@ -13,35 +13,35 @@
                 <canvas id="gameCanvas" width="960" height="540"></canvas>
                 <div class="game-overlay">
                     <div class="info-strip">
-                        <div class="info-item">
+                        <div class="info-item status-level">
                             <span class="label">Level</span>
                             <strong id="level"></strong>
                         </div>
-                        <div class="info-item">
+                        <div class="info-item status-hp">
                             <span class="label">HP</span>
                             <strong id="health"></strong>
                         </div>
-                        <div class="info-item">
+                        <div class="info-item status-gold">
                             <span class="label">Gold</span>
                             <strong id="treasure"></strong>
                         </div>
-                        <div class="info-item">
+                        <div class="info-item status-keys">
                             <span class="label">Keys</span>
                             <strong id="inventory"></strong>
                         </div>
-                        <div class="info-item">
+                        <div class="info-item status-potions">
                             <span class="label">Potions</span>
                             <strong id="potions"></strong>
                         </div>
-                        <div class="info-item">
+                        <div class="info-item status-armor">
                             <span class="label">Armor</span>
                             <strong id="armor"></strong>
                         </div>
-                        <div class="info-item">
+                        <div class="info-item status-xp">
                             <span class="label">XP</span>
                             <strong id="xp"></strong>
                         </div>
-                        <div class="info-item">
+                        <div class="info-item status-power">
                             <span class="label">Power</span>
                             <strong id="power"></strong>
                         </div>
@@ -65,29 +65,23 @@
                         <p class="death-line">The dungeon hath bested thee. Rise once more, brave fool, and prove thy mettle anew.</p>
                         <button id="restartButton" class="game-btn action-button">Rise Again</button>
                     </div>
-                </div>                <div class=\"overworld-screen hidden\" id=\"overworldScreen\">
-                    <div class=\"overworld-hud\">
-                        <div class=\"overworld-header\">Kingdom of Thornwick</div>
-                        <div class=\"quest-log\" id=\"questLog\"></div>
+                </div>
+                <div class="overworld-screen hidden" id="overworldScreen">
+                    <div class="overworld-hud">
+                        <div class="overworld-header">Kingdom of Thornwick</div>
+                        <div class="overworld-instruction">Explore the realm with W/A/S/D or the buttons. Press Space to interact with towns and enter dungeons.</div>
+                        <div class="quest-log" id="overworldQuestLog"></div>
                     </div>
                 </div>
-                <div class=\"dialogue-panel hidden\" id=\"dialoguePanel\">
-                    <div class=\"dialogue-header\" id=\"dialogueHeader\">Mysterious Stranger</div>
-                    <div class=\"dialogue-text\" id=\"dialogueText\">What brings thee to this place?</div>
-                    <div class=\"dialogue-buttons\" id=\"dialogueButtons\"></div>
-                </div>            </div>
+                <div class="dialogue-panel hidden" id="dialoguePanel">
+                    <div class="dialogue-header" id="dialogueHeader">Mysterious Stranger</div>
+                    <div class="dialogue-text" id="dialogueText">What brings thee to this place?</div>
+                    <div class="dialogue-buttons" id="dialogueButtons"></div>
+                </div>
+            </div>
 
             <div>
                 <section class="controls-panel">
-                    <h2>Controls</h2>
-                    <p>Tap the buttons or use keyboard input to play:</p>
-                    <ul>
-                        <li><strong>W / S</strong> — Move forward / backward</li>
-                        <li><strong>A / D</strong> — Turn left / right</li>
-                        <li><strong>Space</strong> — Attack or open chest</li>
-                        <li><strong>P</strong> — Use a potion</li>
-                        <li><strong>R</strong> — Restart after death</li>
-                    </ul>
                     <div class="map-box">
                         <div class="map-label">Mini Map</div>
                         <canvas id="mapCanvas" width="300" height="300"></canvas>
@@ -110,6 +104,11 @@
                             <p class="shop-desc" id="shopDescription">Visit a shop tile to browse wares.</p>
                             <div class="shop-items" id="shopItems"></div>
                         </div>
+                    </div>
+                    <button id="questToggle" class="quest-toggle" type="button">View Quest Log</button>
+                    <div class="quest-panel hidden" id="questLog">
+                        <button id="questClose" class="panel-close" aria-label="Close quest log">✕</button>
+                        <div id="questContent"></div>
                     </div>
                 </section>
             </div>
